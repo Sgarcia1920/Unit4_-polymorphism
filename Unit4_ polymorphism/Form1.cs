@@ -4,8 +4,7 @@ namespace Unit4__polymorphism
 	{
 		double value_end = 0.0;
 		string option = "";
-		Feet unit_1 = new Feet();
-		Kilometers unit_2 = new Kilometers();
+		Conversion first_conversion = new Conversion();
 		public Form1()
 		{
 			InitializeComponent();
@@ -22,25 +21,23 @@ namespace Unit4__polymorphism
 		private void btn_convert_Click(object sender, EventArgs e)
 		{
 			
-
 			 option = txtoption_Unit.Text.ToUpper();
 			switch (option)
 			{
 				case "FEET":
 
-					MessageBox.Show("" + unit_1.Convert(value_end));
+					MessageBox.Show("" + first_conversion.feet_to_cm(value_end));
 
 					break;
 				case "KILOMETERS":
 
-					MessageBox.Show("" + unit_2.Convert(value_end));
+					MessageBox.Show("" + first_conversion.kilometers_to_cm(value_end));
 					break;
 
 				default:
 					Console.WriteLine("No data entered");
 					break;
 			}
-		
 				
 		}
 

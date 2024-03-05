@@ -6,36 +6,17 @@ using System.Threading.Tasks;
 
 namespace Unit4__polymorphism
 {
-	internal class Feet : Unit
+	internal class Conversion : Conversions
 	{
-		private double user_value;
-
-		public double Value
+		public double feet_to_cm(double ft)
 		{
-			get { return user_value; }
-			set { user_value = value; }
+			return ft * 30.48; 
 		}
 
-
-		public Feet()
+		// Implementación del método para convertir de kilómetros a centímetros
+		public double kilometers_to_cm(double km)
 		{
-			this.user_value = 0.0;
-
-		}
-		public Feet(double v)
-		{
-			this.user_value = v;
-
-		}
-
-		public override double Convert(double value)
-		{
-			return value * 30.48;
-		}
-
-		public override string ToString()
-		{
-			return "The result is " + Convert(user_value);
+			return km * 100000; 
 		}
 
 	}

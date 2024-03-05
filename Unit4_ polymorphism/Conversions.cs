@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Unit4__polymorphism
-{	
-	
-	public abstract class Unit
-	{
-		public abstract double Convert(double value);
-	
- 	}
+{
 
-	
+	public interface Conversions
+	{
+		double feet_to_cm(double ft);
+		double kilometers_to_cm(double km);
+	}
+
+
 }
