@@ -4,7 +4,7 @@ namespace Unit4__polymorphism
 	{
 		double value_end = 0.0;
 		string option = "";
-		Conversion first_conversion = new Conversion();
+		Conversion_implementation first_conversion = new Conversion_implementation();
 		public Form1()
 		{
 			InitializeComponent();
